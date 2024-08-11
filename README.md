@@ -1,1 +1,1 @@
-ゲーム2
+ゲーム2（Akuru ~the monster~）
