@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:"Century Gothic";
+}
+.header{
+    height:80px;
+    color:white;
+    text-align:right;
+    background-color:steelblue;
+}
+.header p{
+    padding:30px 30px;
+    line-height:center;
+}
+.main_home{
+    background-image:url(../assets/img/sea.jpg);
+    background-size:cover;
+    height:756px;
+    background-position:center;
+    background-repeat:repeat-y;
+    text-align:center;
+}
+.main_title{
+    display:inline-block;
+    margin-top:90px;
+    margin-bottom:30px;
+    padding-top:10px;
+    width:470px;
+    height:170px;
+    background-color:white;
+    text-align:center;
+    font-size:35px;
+    background: rgba(255,255,255,0.8);
+}
+marquee{
+    width:50%;
+}
+.ship{
+    width:50px;
+    height:30px;
+}
+.akuru{
+    width:120px;
+    height:100px;
+}
+.contents{
+    padding-top:40px;
+}
+.button{
+    margin:0 auto;
+    width:300px;
+    height:100px;
+    font-size:30px;
+}
+input{
+    width:200px;
+    height:50px;
+    font-size:25px;
+}
+.main_result{
+    background-image:url(../assets/img/sunset1.jpg);
+    background-size:cover;
+    height:756px;
+    background-position:center;
+    background-repeat:repeat-y;
+    text-align:center;
+}
