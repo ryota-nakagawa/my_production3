@@ -3,6 +3,14 @@
     margin:0;
     font-family:"Century Gothic";
 }
+body{
+    background-image:url(../assets/img/sea.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:repeat-y;
+    text-align:center;
+}
 .header{
     height:80px;
     color:white;
@@ -12,14 +20,6 @@
 .header p{
     padding:30px 30px;
     line-height:center;
-}
-.main_home{
-    background-image:url(../assets/img/sea.jpg);
-    background-size:cover;
-    height:756px;
-    background-position:center;
-    background-repeat:repeat-y;
-    text-align:center;
 }
 .main_title{
     display:inline-block;
