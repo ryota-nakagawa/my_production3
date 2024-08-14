@@ -48,11 +48,6 @@ var bombJudge;
 //魚雷や爆弾が瞬間的に1回当たったかどうか判断
 var torpedoAttackJudge;
 var bombAttackJudge;
-var imageURLs = ["assets/img/akuru/akuru_attack.png","assets/img/akuru/akuru_down.png","assets/img/akuru/akuru_left.png","assets/img/akuru/akuru_right.png",
-                 "assets/img/akuru/akuru_up.png","assets/img/akuru/akuru.png","assets/img/weapon/bomb_left.png","assets/img/weapon/bomb_right.png",
-                 "assets/img/weapon/effect.png","assets/img/weapon/plane_left.png","assets/img/weapon/plane_right.png","assets/img/weapon/ship_left.png",
-                 "assets/img/weapon/ship_right.png","assets/img/weapon/sm_left.png","assets/img/weapon/sm_right.png","assets/img/weapon/torpedo_left.png","assets/img/weapon/torpedo_right.png"
-                ];
 
 //キーイベントを追加
 document.addEventListener("keydown", keyDownHandler, false);
@@ -545,17 +540,5 @@ fgctx.lineWidth = 3;
 fgctx.font = "35px Century Gothic";
 fgctx.fillText("1回Enterしてスタート!", 380, 300);
 fgctx.font = "30px Century Gothic";
-fgctx.fillText("※もし動かなければタイトル画面に戻ってみてください", 200, 330);
-//if(await loadImages(imageUrls)){
-//    fgctx.fillStyle = "green";
-//   fgctx.lineWidth = 3;
-//    fgctx.font = "35px Century Gothic";
-//    fgctx.fillText("1回Enterしてスタート!", 380, 300);
-//    fgctx.font = "30px Century Gothic";
-//    fgctx.fillText("※もし動かなければタイトル画面に戻ってみてください", 200, 330);
-//}else{
-//    fgctx.fillStyle = "green";
-//    fgctx.lineWidth = 3;
-//    fgctx.font = "35px Century Gothic";
-//    fgctx.fillText("少々お待ちください", 380, 300);
-//}
+fgctx.fillText("※1回目はチュートリアルとしてご利用ください", 200, 330);
+
