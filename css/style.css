@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:"Century Gothic";
+}
+body{
+    background-image:url(../assets/img/sea.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+.header{
+    height:80px;
+    color:white;
+    text-align:right;
+    background-color:steelblue;
+}
+.header p{
+    padding:30px 30px;
+    line-height:center;
+}
+.main_title{
+    display:inline-block;
+    margin-top:90px;
+    margin-bottom:30px;
+    padding-top:10px;
+    width:470px;
+    height:200px;
+    text-align:center;
+    font-size:40px;
+    background: rgba(255,255,255,0.8);
+}
+marquee{
+    width:50%;
+}
+.ship{
+    width:50px;
+    height:30px;
+}
+.akuru{
+    width:120px;
+    height:100px;
+}
+.contents{
+    padding-top:40px;
+}
+.button{
+    margin:0 auto;
+    width:300px;
+    height:100px;
+    font-size:30px;
+}
+input{
+    width:200px;
+    height:50px;
+    font-size:25px;
+}
+.main_description{
+    display:inline-block;
+    background: rgba(255,255,255,0.8);
+    width:300px;
+    height:50px;
+    margin:20px 0;
+    padding:10px;
+    font-size:23px;
+}
+.out{
+    position:relative;
+    text-align:center;
+}
+.out img{
+    max-width:50%;
+    height: auto;
+}
+.in img{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    opacity: 0;
+    transition: .3s;
+}
+.in{
+    display: flex;
+    justify-content: center;
+}
+.in input{
+    display:none;
+}
+label{
+    display:block;
+}
+label span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: -40px 0 10px 0;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+label span::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:green;
+    opacity: 0.5;
+    border-radius: 100%;
+}
+
+label input:checked + span::before{
+    background: #000;
+    opacity: 1;
+}
+label input:checked ~ img,label input:checked ~ a img{
+    opacity: 1;
+    z-index: 1;
+}
+.main_result{
+    height:756px;
+    background-position:center;
+    background-repeat:repeat-y;
+    text-align:center;
+}
+.result_contents{
+    background:rgba(255,255,255,0.8);
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:30px;
+    padding-top:20px;
+    width:470px;
+    height:250px;
+    text-align:center;
+    font-size:50px;
+}
+.result_contents h3{
+    color:firebrick;
+    font-size:25px;
+}
