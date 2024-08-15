@@ -412,6 +412,7 @@ async function loadImages(imageUrls) {
     return true;
 }
 
+//キーが押されたときに実行
 function keyDownHandler(e){
     if(e.keyCode === 32){
         spacePressed = true;
@@ -427,6 +428,7 @@ function keyDownHandler(e){
     }
 }
 
+//キーが離されたときに実行
 function keyUpHandler(e){
     if(e.keyCode === 32){
         spacePressed = false;
@@ -442,6 +444,7 @@ function keyUpHandler(e){
     }
 }
 
+//Enterが押された後に実行
 function keyEnterPress(e){
     if(e.key === "Enter"){
         fgctx.clearRect(200, 270, 1000, 65);
