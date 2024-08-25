@@ -32,10 +32,9 @@
             var score = sessionStorage.getItem("score");
             var lives_int = parseInt(lives);
             var score_int = parseInt(score);
-            div1.innerHTML = lives_int;
-            div2.innerHTML = score_int;
             if(lives_int === 0){
                 div3.innerHTML = "アクルくん、亡命";
+                score_int = 0;
             }else{
                 if(score_int <= 170){
                     div3.innerHTML = "もう少し食べたいな～";
@@ -43,6 +42,8 @@
                     div3.innerHTML = "いっぱい食べました!";
                 }
             }
+            div1.innerHTML = lives_int;
+            div2.innerHTML = score_int;
         </script>
     </body>
 </html>
