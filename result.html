@@ -30,14 +30,16 @@
             var div3 = document.getElementById("mini_result");
             var lives = sessionStorage.getItem("lives");
             var score = sessionStorage.getItem("score");
-            div1.innerHTML = lives;
-            div2.innerHTML = score;
-            if(lives === 0){
+            var lives_int = parseInt(lives);
+            var score_int = parseInt(score);
+            div1.innerHTML = lives_int;
+            div2.innerHTML = score_int;
+            if(lives_int === 0){
                 div3.innerHTML = "アクルくん、亡命";
             }else{
-                if(score <= 150){
+                if(score_int <= 170){
                     div3.innerHTML = "もう少し食べたいな～";
-                }if(score >= 151){
+                }else{
                     div3.innerHTML = "いっぱい食べました!";
                 }
             }
