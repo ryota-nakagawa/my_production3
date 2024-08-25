@@ -400,18 +400,6 @@ function clock(){
     window.requestAnimationFrame(clock);
 }
 
-//全ての画像を読み込む
-async function loadImages(imageUrls) {
-    const promises = imageUrls.map(url => new Promise((resolve, reject) => {
-        const img = new Image();
-        img.onload = () => resolve(img);
-        img.onerror = reject;
-        img.src = url;
-    }));
-    await Promise.all(promises);
-    return true;
-}
-
 //キーが押されたときに実行
 function keyDownHandler(e){
     if(e.keyCode === 32){
